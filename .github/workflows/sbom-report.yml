@@ -17,7 +17,9 @@ jobs:
       uses: anchore/sbom-action@v0.12.0
       with:
          artifact-name: ${{ github.event.repository.name }}-spdx.json
+         output-file: "demo123"
     - name: Relocate SBOM
       # To be consistent with the filenames used in dl.k6.io
       run: |
         ls -la; pwd
+        ls -la demo123
