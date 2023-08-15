@@ -22,4 +22,4 @@ jobs:
       # To be consistent with the filenames used in dl.k6.io
       run: |
         ls -la; pwd
-        ls -la demo123
+        ls -la dist
